@@ -1,7 +1,8 @@
 /* @flow */
 
-import React, { PropTypes, Component, Element as ReactElement } from 'react';
+import React, { Component, Element as ReactElement } from 'react';
 import { View, BackAndroid } from 'react-native';
+import PropTypes from 'prop-types';
 import AddressBar from './AddressBar';
 import type {
   EnhancedNavigationRoute,

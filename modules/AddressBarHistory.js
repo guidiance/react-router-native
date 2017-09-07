@@ -1,7 +1,8 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import { View, ListView, Text, TouchableHighlight, TouchableWithoutFeedback } from 'react-native';
+import PropTypes from 'prop-types';
 import {
   BTN_UNDERLAY_COLOR,
   ADDDRESS_BAR_ROW_HEIGHT,

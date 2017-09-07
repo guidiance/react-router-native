@@ -2,12 +2,12 @@
 
 import React, {
   Component,
-  PropTypes,
 } from 'react';
 import {
   View,
   Text,
 } from 'react-native';
+import PropTypes from 'prop-types';
 import {
   Link,
   Pop,

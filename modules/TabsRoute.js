@@ -1,6 +1,7 @@
 /* @flow */
 
-import { PropTypes, Component } from 'react';
+import { Component } from 'react';
+import PropTypes from 'prop-types';
 import invariant from 'invariant';
 import {
   createRouteFromReactElement as _createRouteFromReactElement,

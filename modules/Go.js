@@ -1,13 +1,13 @@
 /* @flow */
 
 import React, {
-  PropTypes,
   Component,
   Element as ReactElement,
 } from 'react';
 import {
   TouchableHighlight,
 } from 'react-native';
+import PropTypes from 'prop-types';
 import warning from 'warning';
 
 type Props = {

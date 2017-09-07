@@ -1,6 +1,6 @@
 /* @flow */
 
-import { PropTypes } from 'react';
+import PropTypes from 'prop-types';
 
 export function notImplemented(props: Object, propName: string, componentName: string): ?Error {
   if (props[propName]) {

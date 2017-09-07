@@ -1,8 +1,9 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import warning from 'warning';
 import { View, TextInput, Text, TouchableHighlight, Linking } from 'react-native';
+import PropTypes from 'prop-types';
 import Back from './Back';
 import Forward from './Forward';
 import AddressBarHistory from './AddressBarHistory';

@@ -64,8 +64,9 @@
   "dependencies": {
     "history": "3.2.1",
     "invariant": "^2.2.1",
-    "react-router": "3.0.0-alpha.3",
+    "prop-types": "^15.5.10",
     "react-native-navigation-experimental-compat": "1.0.0",
+    "react-router": "3.0.0-alpha.3",
     "warning": "^3.0.0"
   },
   "devDependencies": {
