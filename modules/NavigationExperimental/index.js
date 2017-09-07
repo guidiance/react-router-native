@@ -1,6 +1,4 @@
-import {
-  NavigationExperimental,
-} from 'react-native';
+import NavigationExperimental from 'react-native-navigation-experimental-compat';
 
 export const {
   Header: AnimatedHeader,

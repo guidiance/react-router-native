@@ -2,9 +2,9 @@ import {
   Animated,
   Easing,
   NativeModules,
-  NavigationExperimental,
   Platform,
 } from 'react-native';
+import NavigationExperimental from 'react-native-navigation-experimental-compat';
 import invariant from 'invariant';
 import { warnOnce } from './warningUtil';
 

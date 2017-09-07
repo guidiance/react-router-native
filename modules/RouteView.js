@@ -1,7 +1,8 @@
 /* @flow */
 
 import React, { Component, PropTypes } from 'react';
-import { NavigationExperimental, View } from 'react-native';
+import { View } from 'react-native';
+import NavigationExperimental from 'react-native-navigation-experimental-compat';
 import { warnOutOfSync } from './warningUtil';
 import { globalStyles as styles } from './styles';
 

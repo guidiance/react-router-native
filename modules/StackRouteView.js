@@ -1,7 +1,8 @@
 /* @flow */
 
 import React, { PropTypes, Component } from 'react';
-import { NavigationExperimental, View } from 'react-native';
+import { View } from 'react-native';
+import NavigationExperimental from 'react-native-navigation-experimental-compat';
 import { warnOutOfSync } from './warningUtil';
 import transitionRegistry from './transitionRegistry';
 import { globalStyles as styles } from './styles';
