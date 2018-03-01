@@ -65,7 +65,7 @@
     "history": "3.2.1",
     "invariant": "^2.2.1",
     "prop-types": "^15.5.10",
-    "react-native-navigation-experimental-compat": "github:guidiance/react-native-navigation-experimental-compat#96ab2ee76e893976a1d5b9a71d4ef12708d6570d",
+    "react-native-navigation-experimental-compat": "github:guidiance/react-native-navigation-experimental-compat#fd4a64b6db8fb90dc4244648f9f14858e5871487",
     "react-router": "~3.0.5",
     "warning": "^3.0.0"
   },
