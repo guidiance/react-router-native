@@ -1,7 +1,7 @@
 /* @flow */
 
 import React, { Component, Element as ReactElement } from 'react';
-import { View, BackAndroid } from 'react-native';
+import { View, BackHandler } from 'react-native';
 import PropTypes from 'prop-types';
 import AddressBar from './AddressBar';
 import type {
@@ -48,11 +48,11 @@ class RootContainer extends Component<any, Props, any> {
   }
 
   componentDidMount(): void {
-    BackAndroid.addEventListener('hardwareBackPress', this.handleHardwareBackPress);
+    BackHandler.addEventListener('hardwareBackPress', this.handleHardwareBackPress);
   }
 
   componentWillUnmount(): void {
-    BackAndroid.removeEventListener('hardwareBackPress', this.handleHardwareBackPress);
+    BackHandler.removeEventListener('hardwareBackPress', this.handleHardwareBackPress);
   }
 
   handleHardwareBackPress(): boolean {
@@ -64,7 +64,7 @@ class RootContainer extends Component<any, Props, any> {
       router,
     } = this.context;
 
-    return onHardwareBackPress(router, BackAndroid.exitApp);
+    return onHardwareBackPress(router, BackHandler.exitApp);
   }
 
   context: Context;
