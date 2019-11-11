@@ -1,14 +1,13 @@
 /* @flow */
 
-import { StyleSheet, Dimensions } from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 export const BTN_UNDERLAY_COLOR = '#E1E2E1';
 export const ADDDRESS_BAR_HEIGHT = 70;
-export const ADDDRESS_BAR_ROW_HEIGHT = 30;
 
-const { width } = Dimensions.get('window');
+const {width} = Dimensions.get('window');
 
-const { absoluteFillObject } = StyleSheet;
+const {absoluteFillObject} = StyleSheet;
 
 // Used across all navigational components i.e StackRouteView
 const globalStyles = StyleSheet.create({
@@ -82,7 +81,7 @@ const addressBarStyles = StyleSheet.create({
   backBtnText: {
     color: '#585858',
     fontSize: 20,
-    transform: [{ rotate: '180deg' }],
+    transform: [{rotate: '180deg'}],
   },
   backBtnTextDisabled: {
     color: '#C1C2C2',
@@ -95,35 +94,4 @@ const addressBarStyles = StyleSheet.create({
   },
 });
 
-const addressBarHistoryStyles = StyleSheet.create({
-  container: {
-    ...absoluteFillObject,
-  },
-  backdrop: {
-    ...absoluteFillObject,
-  },
-  listViewWrapper: {
-    backgroundColor: '#FFFFFF',
-    marginBottom: 20,
-    marginLeft: 4,
-    marginTop: ADDDRESS_BAR_HEIGHT - 2,
-    position: 'absolute',
-    shadowColor: '#929292',
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 1,
-    shadowRadius: 2,
-    width: Math.max(width * 0.60, 180),
-  },
-  listView: {
-    flex: 1,
-  },
-  listViewContent: {
-  },
-  row: {
-    height: ADDDRESS_BAR_ROW_HEIGHT,
-    lineHeight: 24,
-    paddingLeft: 10,
-  },
-});
-
-export { globalStyles, addressBarStyles, addressBarHistoryStyles };
+export {globalStyles, addressBarStyles};

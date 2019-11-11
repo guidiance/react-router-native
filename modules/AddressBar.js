@@ -6,7 +6,6 @@ import { View, TextInput, Text, TouchableHighlight, Linking } from 'react-native
 import PropTypes from 'prop-types';
 import Back from './Back';
 import Forward from './Forward';
-import AddressBarHistory from './AddressBarHistory';
 import { BTN_UNDERLAY_COLOR, addressBarStyles as styles } from './styles';
 import type { Snapshot } from './TypeDefinition';
 
@@ -60,7 +59,6 @@ class AddressBar extends Component<DefaultProps, Props, State> {
 
   componentWillMount(): void {
     (this: any).toggleDropdown = this.toggleDropdown.bind(this);
-    (this: any).onPressSnapshot = this.onPressSnapshot.bind(this);
     (this: any).onSubmit = this.onSubmit.bind(this);
   }
 
@@ -76,14 +74,6 @@ class AddressBar extends Component<DefaultProps, Props, State> {
   onSubmit(to: string): void {
     const { router } = this.context;
     router.push(to);
-  }
-
-  onPressSnapshot(offset: number): void {
-    const { router } = this.context;
-    this.setState({
-      historyType: false,
-    });
-    router.go(offset);
   }
 
   props: Props;
@@ -180,12 +170,6 @@ class AddressBar extends Component<DefaultProps, Props, State> {
             <Text style={styles.docsLink}>Docs</Text>
           </TouchableHighlight>
         </View>
-        <AddressBarHistory
-          historyType={historyType}
-          history={history}
-          onPressSnapshot={this.onPressSnapshot}
-          onPressBackdrop={() => this.toggleDropdown(false)}
-        />
       </View>);
   }
 }
